@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8888
 spring:
   application:
     name: config-center
@@ -7,14 +7,14 @@ spring:
     config:
       server:
         git:
-#          uri: file:///${user.home}/config-repo #在 home 下面新建文件夹config-repo，并加入 git，新建文件夹{test}, 新建 test.yml ,commit ,访问 http://localhost:8084/test/master/
+#          uri: file:///${user.home}/config-repo #在 home 下面新建文件夹config-repo，并加入 git，新建文件夹{test}, 新建 test.yml ,commit ,访问 http://localhost:8888/test/master/
 #          searchPaths: '{application}'  #搜索各个以服务名命名的文件夹下的所有yml
           uri: https://github.com/lux182/MMBConfigData
           searchPaths: data
 eureka:
   instance:
     hostname: localhost #优先级不如 spring.application.name
-    instance-id: localhost:8084
+    instance-id: localhost:8888
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8080/eureka/  #注册中心地址

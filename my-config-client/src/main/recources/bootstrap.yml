@@ -7,7 +7,7 @@ spring:
     name: mmb-config-client
   cloud:
     config:
-      uri:  http://localhost:8084
+      uri:  http://localhost:8888
 ---
 eureka:
   instance:
