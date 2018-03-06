@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
+ * Feign已经使用了Ribbon，所以如果你使用了@FeignClient，Riboon也同样被应用了
+ *
  * @Author: Leo
  * @Blog: http://blog.csdn.net/lc0817
  * @CreateTime: 2017/1/19 12:28
