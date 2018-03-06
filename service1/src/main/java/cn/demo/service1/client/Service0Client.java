@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Feign已经使用了Ribbon，所以如果你使用了@FeignClient，Riboon也同样被应用了
+ * 包含负载均衡
  *
  * @Author: Leo
  * @Blog: http://blog.csdn.net/lc0817

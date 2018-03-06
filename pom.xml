@@ -26,6 +26,16 @@
         <version>1.4.5.RELEASE</version>
     </parent>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <docker.plugin.version>0.4.13</docker.plugin.version>
+        <springframework.cloud.version>Brixton.RELEASE</springframework.cloud.version>
+        <docker.image.prefix>kbastani</docker.image.prefix>
+        <docker.registry>127.0.0.1/library</docker.registry>
+        <tag>v7</tag>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
