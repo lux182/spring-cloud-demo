@@ -22,7 +22,7 @@ public abstract class AbstractController {
         System.err.println(req.getRemoteUser());
         System.err.println(req.getContextPath());
         System.err.println("=============");
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap();
         map.put("code", "0");
         map.put("msg", e.getMessage());
         return map;

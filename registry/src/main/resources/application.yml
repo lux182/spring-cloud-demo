@@ -1,5 +1,16 @@
 server:
   port: 8080 # 注册中心占用8080端口
+
+---
+
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri:  http://localhost:8084
+---
+
 eureka:
   instance:
     hostname: localhost
@@ -8,3 +19,5 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #其实就是 http://localhost:8080/eureka/
+    transport:
+      retryableClientQuarantineRefreshPercentage: 1 #提升服务注册准确率

@@ -1,4 +1,4 @@
-package cn.demo.service0;
+package com.kuaihuoyun.caesar.manage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @CreateTime: 2016/11/21 23:01
  * @Description:
  */
-@SpringBootApplication(scanBasePackages = "cn.demo.service0")
+@SpringBootApplication(scanBasePackages = "cn.demo.supplier")
 @EnableEurekaClient
 public class Application {
 
