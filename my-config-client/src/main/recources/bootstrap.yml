@@ -7,7 +7,8 @@ spring:
     name: mmb-config-client
   cloud:
     config:
-      uri:  http://localhost:8888
+#      uri:  http://localhost:8888
+      uri:  http://192.168.6.81:8888
 ---
 eureka:
   instance:
@@ -15,4 +16,4 @@ eureka:
     instance-id: localhost:8002
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8080/eureka/  #注册中心地址
+      defaultZone: http://192.168.6.81:8761/eureka/  #注册中心地址
