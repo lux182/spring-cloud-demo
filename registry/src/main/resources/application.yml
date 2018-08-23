@@ -14,6 +14,13 @@ spring:
 eureka:
   instance:
     hostname: localhost
+#    显示 ip 配置
+    preferIpAddress: true
+#    可以通过eureka.instance.metadataMap修改元数据，这些元数据不会改变客户端的行为。
+#    使用这个配置，多个服务实例可以配置在一个主机上，random.value确保了实例ID的唯一性。当然需要实例的端口不一样。
+    metadataMap:
+          instanceId: ${spring.application.name}:${random.value}
+
   client:
     registerWithEureka: false
     fetchRegistry: false
