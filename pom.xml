@@ -16,6 +16,7 @@
         <module>config-server</module>
         <module>back-manage</module>
         <module>my-config-client</module>
+        <module>gateway</module>
     </modules>
 
     <!--以下dependency来自官方-->
